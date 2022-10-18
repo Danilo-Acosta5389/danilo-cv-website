@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: black;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    border-bottom: 3px solid black;
+}
+
+h4, h6 {
+    text-align: center;
+}
+
+.under-title {
+    color: black;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+.nav-btn {
+    text-align: center;
+    color: red;
+    width: 100%;
+}
+
+.main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 10vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+article > p {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.about-info>h6 { font-size: medium; }
+
+.about-info {
+    margin-top: 1rem;
+}
+
+.about-info>p { font-family: 'Noto Sans Mono', monospace; }
+
+.side-content-home {
+    visibility: hidden;
+}
+
+.side-content-about {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: fit-content;
+    border: 5px solid white;
+    padding-top: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px 10px gray;
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+
+.side-content-cv {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px 10px gray;
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+
+.side-content-portfolio {
+    visibility: hidden;
+}
+
+img + p {
+    font-size: 0.6em;
+    font-weight: 900;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+}
+img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.project-1 > img,
+.project-2 > video,
+.project-3 > img {
+    width:100%;
+    max-width: 400px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    justify-content: center;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 500;
+}
+
+li {
+    padding-bottom: 0.7rem;
+}
+
+p {
+    max-width: 30em;
+}
+
+.main-portfolio {
+    gap: 2rem;
+
+}
+
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+    width: 100%;
+    height: 5em;
+} 
+
+footer > a {
+    padding-top: 1rem;
+    animation: color-change 0.7s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+
+
+/* ----------First media query-------------- */
+
+@media (min-width: 600px) {
+
+    .nav-btn {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 700px) {
+
+    h1 {
+        max-width: 100%;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-btn {
+        font-size: 1em;
+        width: max-content;
+    }
+
+    .main-cv {
+        display: grid;
+        grid-template-columns: 1fr fit-content 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+    }
+
+    h4 {
+        grid-row: 1;
+        grid-column: 2 / 3;
+    }
+
+    .education,
+    .certifications,
+    .employments,
+    .languages1,
+    .languages2,
+    .skills { display: block;}
+
+    .employments {
+        grid-row: 2;
+        grid-column: 1;
+
+    }
+
+    .certifications {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .education {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .languages1 {
+        grid-row: 3;
+        grid-column: 1 / 2;
+    }
+
+    .languages2 {
+        grid-row: 3;
+        grid-column: 2 / 3;
+    }
+
+    .skills {
+        grid-row: 3;
+        grid-column: 3 / 4;
+    }
+
+    li {
+        max-width: fit-content;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        max-width: max-content;
+        font-size: 2em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+}
+@media (min-width: 950px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        width: 950px;
+    }
+
+    h1 {
+        max-width: max-content;
+        font-size: 2.5em;
+    }
+
+    .nav-btn {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        /* align-items: center;
+        justify-content: center; */
+        max-width: 1300px;
+    }
+    
+}
