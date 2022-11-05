@@ -66,6 +66,10 @@ a:hover {
     margin-bottom: 10vh;
 }
 
+/* #mainHome {
+    margin-bottom: 20rem;
+} */
+
 article {
     display: flex;
     flex-direction: column;
@@ -140,6 +144,51 @@ img {
     max-width: 400px;
 }
 
+.rps-game {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    /* padding: 5rem; */
+    /* min-width: 500px;
+    min-height: 300px; */
+
+}
+
+.rps-game > h2 {
+    color: red;
+}
+
+.player {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.buttons > button {
+    /* padding: 10px; */
+    padding: 0.5rem 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5em;
+}
+
+.scissor {
+    padding: 0px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -172,14 +221,21 @@ footer {
     text-align: center;
     justify-content: center;
     background-color: beige;
+    position:relative;
     width: 100%;
     height: 5em;
+    bottom: 0;
+
 } 
 
 footer > a {
     padding-top: 1rem;
     animation: color-change 0.7s infinite;
   }
+
+  /* #footerHome {
+    position: fixed;
+  } */
   
   @keyframes color-change {
     0% { color: red; }
@@ -190,12 +246,41 @@ footer > a {
 
 /* ----------First media query-------------- */
 
+@media (min-width: 300px) {
+    .rps-game {
+        padding: 0px;
+        width: 450px;
+        height: 350px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
+
+@media (min-height: 600px) {
+    #footerHome {
+        position: fixed;
+        bottom: 0;
+      }
+}
+
+@media (min-height: 1000px) {
+    #footerHome {
+        position: relative;
+        margin-top: 25rem;
+      }
+}
+
 @media (min-width: 600px) {
 
     .nav-btn {
         font-size: 1.2em;
         padding: 5px;
     }
+    /* #footerHome {
+        position: fixed;
+      } */
 }
 
 @media (min-width: 700px) {
@@ -309,10 +394,9 @@ footer > a {
         font-size: 1.2rem;
     }
 
-    footer {
-        /* align-items: center;
-        justify-content: center; */
-        max-width: 1300px;
+   footer {
+        /* max-width: 1300px; */
+        width: 100%;
     }
     
 }
