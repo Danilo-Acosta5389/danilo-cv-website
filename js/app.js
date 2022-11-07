@@ -1,3 +1,7 @@
+
+/*------------- Rock, paper, scissor game ------------------ */
+
+
 const rockBtn = document.querySelector('.rock');
 const paperBtn = document.querySelector('.paper');
 const scissorBtn = document.querySelector('.scissor');
@@ -78,70 +82,49 @@ player.forEach(playerChoice => {
 
 })
 
-/* const playerItem = player[0];
-const computerItem = computer[Math.floor(Math.random()* computer.length)]; */
-
-/* console.log('Player choosed: ' + player[0]); */
-/* console.log('Computer choosed: ' + computerItem); */
 
 
-/* const computerOutput = document.querySelector('.computersChoice');
-const winner = document.querySelector('.winner'); */
+/* ---------------------Modals in portfolio-------------------------- */
 
 
+/* --------Project 1 image larger size------ */
 
-//Player win scenario
+const modalImgProject1 = document.getElementById('imgProject1');
+const modalProject1 = document.getElementById('modalProject1');
+const closeModalProject1 = document.getElementById('closeModalProject1');
 
 
-/* if (player === 'Rock') {
-    if (computerItem === 'Scissor') {
-        console.log("Player won!")
-        winner.textContent = "Player wins!";
+modalImgProject1.addEventListener('click', () => {
+    modalProject1.classList.add('show');
+});
+
+closeModalProject1.addEventListener('click', () => {
+    modalProject1.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalProject1) {
+        modalProject1.classList.remove('show');
+    };
+});
+
+
+/* --------Project 3 image larger size------ */
+
+const modalImgProject3 = document.getElementById('imgProject3');
+const modalProject3 = document.getElementById('modalProject3');
+const closeModalProject3 = document.getElementById('closeModalProject3');
+
+modalImgProject3.addEventListener('click', () => {
+    modalProject3.classList.add('show');
+});
+
+closeModalProject3.addEventListener('click', () => {
+    modalProject3.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalProject3) {
+        modalProject3.classList.remove('show');
     }
-} */
-/* if (playerItem === 'Paper') {
-    if (computerItem === 'Rock') {
-        console.log("Player won!")
-        winner.textContent = "Player wins!";
-    }
-}
-if (playerItem === 'Scissor') {
-    if (computerItem === 'Paper') {
-        console.log("Player won!")
-        winner.textContent = "Player wins!";
-    }
-}
-
-
-// Computer wins scenario
-
-
-if (computerItem === 'Rock') {
-    if (playerItem === 'Scissor') {
-        console.log("Computer won!")
-        winner.textContent = "Computer wins!";
-    }
-}
-if (computerItem === 'Paper') {
-    if (playerItem === 'Rock') {
-        console.log("Computer won!")
-        winner.textContent = "Computer wins!";
-    }
-}
-if (computerItem === 'Scissor') {
-    if (playerItem === 'Paper') {
-        console.log("Computer won!")
-        winner.textContent = "Computer wins!";
-    }
-}
-
-computerOutput.textContent = computerItem;
-
-
-
-// It's a tie!
-
-if (playerItem === computerItem) {
-    winner.textContent = "It's a tie!";
-    console.log("It's a tie!");
-} */
+});
