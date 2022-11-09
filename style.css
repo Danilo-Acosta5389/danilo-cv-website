@@ -31,6 +31,16 @@ h4, h6 {
     text-align: center;
 }
 
+h5 {
+    text-align: center;
+}
+
+h6 {
+    max-width: 80vw;
+}
+
+
+
 .under-title {
     color: black;
     margin-top: 0px;
@@ -41,6 +51,8 @@ nav {
     display: grid;
     grid-template-rows: repeat(4, auto);
     justify-items: center;
+    
+
 }
 
 a {
@@ -52,9 +64,13 @@ a:hover {
 }
 
 .nav-btn {
+    padding: 5px;
+    font-size: 1.25em;
     text-align: center;
     color: red;
     width: 100%;
+    min-height: 5vh;
+    /* line-height: 20px; */
 }
 
 .main {
@@ -83,13 +99,13 @@ article > p {
     font-family: 'Noto Sans Mono', monospace;
 }
 
-.about-info>h6 { font-size: medium; }
+.about-info > h6 { font-size: medium; }
 
 .about-info {
     margin-top: 1rem;
 }
 
-.about-info>p { font-family: 'Noto Sans Mono', monospace; }
+.about-info > p { font-family: 'Noto Sans Mono', monospace; }
 
 .side-content-home {
     visibility: hidden;
@@ -114,10 +130,11 @@ article > p {
 } */
 
 .side-content-cv {
+    
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    width: fit-content;
+    max-width: fit-content;
     height: fit-content;
     border: 5px solid white;
     padding: 5px;
@@ -162,7 +179,7 @@ img {
 .project-2 > video,
 .project-3 > img {
     width:100%;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 .rps-game {
@@ -175,7 +192,7 @@ img {
     border: 2px solid black;
     /* padding: 5rem; */
     max-width: 80vw;
-    height: auto;
+    min-height: 600px;
     /* min-width: 200px; */
     /* max-width: 500px; */
     min-height: 367px;
@@ -219,13 +236,22 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content:space-around; */
 }
 
 ul {
-    justify-content: center;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 500;
+}
+
+.speak ul {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.skills ul {
+    max-width: 80vw;
 }
 
 li {
@@ -270,9 +296,48 @@ footer > a :hover {
 }
 
 
+/*------------------Number guessing game----------------------------*/
+
+
+/*---------------------- Number guessing game ----------------------------- */
+
+.project-5 {
+    margin-top: 5rem;
+}
+
+.ng-container {
+    border: 3px solid black;
+}
+.mainThing.show
+{
+    display: none;
+}
+
+.winner {
+	display: none;
+}
+
+.winner.win {
+	display: block;
+}
+
+.loser {
+	display: none;
+}
+
+.loser.lose {
+    display: block;
+}
+
+
+
+
 /*-------------------Modal-----------------------*/
 
 .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     pointer-events: none;
     width: 100vw;
@@ -284,7 +349,7 @@ footer > a :hover {
     top: 0;
     /* z-index: 1; */
     margin: auto;
-    padding-top: 10vh;
+    padding-top: 0vh;
     transition: opacity 0.3s ease;
     /* padding-top: 100px; */
 }
@@ -301,10 +366,13 @@ footer > a :hover {
     align-items: flex-end;
     background-color: white;
     margin: auto;
-    padding: 0px;
+    padding: 0;
     width: fit-content;
     /* width: 600px;
     height: 400px; */
+}
+.modalContainer > img {
+    max-width: 90vw;
 }
 
 .closeModal {
@@ -352,13 +420,13 @@ footer > a :hover {
     
 }
 
-@media (min-width: 430px) {
+/* @media (min-width: 430px) {
 
     .rps-game {
         min-height: 252px;
     }
     
-}
+} */
 
 @media (min-height: 600px) {
     #footerHome {
@@ -376,16 +444,24 @@ footer > a :hover {
 
 @media (min-width: 600px) {
 
-    .nav-btn {
+    /* .nav-btn {
         font-size: 1.2em;
         padding: 5px;
-    }
+    } */
     /* #footerHome {
         position: fixed;
       } */
+
+    .modal {
+        padding-top: 0vh;
+    }
+
+    .modalContainer img {
+        max-width: 80vw;
+    }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
 
     h1 {
         max-width: 100%;
@@ -393,6 +469,10 @@ footer > a :hover {
 
     h5 {
         font-size: 1em;
+    }
+    
+    section > h6 {
+        min-width: max-content;
     }
 
     nav {
@@ -403,14 +483,18 @@ footer > a :hover {
     }
 
     .nav-btn {
-        font-size: 1em;
+        font-size: 1.1em;
         width: max-content;
     }
 
-    .main-cv {
+    .speak ul {
+        padding-right: 0;
+    }
+
+    .gridTemplate {
         display: grid;
         grid-template-columns: 1fr fit-content 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
         gap: 2rem;
     }
 
@@ -422,8 +506,8 @@ footer > a :hover {
     .education,
     .certifications,
     .employments,
-    .languages1,
-    .languages2,
+    .programming,
+    .speak,
     .skills { display: block;}
 
     .employments {
@@ -442,12 +526,12 @@ footer > a :hover {
         grid-column: 3;
     }
 
-    .languages1 {
+    .programming {
         grid-row: 3;
         grid-column: 1 / 2;
     }
 
-    .languages2 {
+    .speak {
         grid-row: 3;
         grid-column: 2 / 3;
     }
@@ -472,7 +556,26 @@ footer > a :hover {
     h6 {
         font-size: 1em;
     }
+
+    .modal {
+        padding-top: 0vh;
+    }
+    
+    .modalContainer img {
+        max-width: 80vw;
+    }
 }
+
+@media (min-width: 900px) {
+    .modal {
+        padding-top: 0vh;
+    }
+    .modalContainer img {
+        max-width: 90vw;
+    }
+    
+}
+
 @media (min-width: 950px) {
 
     body {
@@ -482,6 +585,8 @@ footer > a :hover {
         align-items: center;
         justify-content: center;
     }
+
+
 
     header {
         width: 950px;
@@ -499,6 +604,14 @@ footer > a :hover {
    footer {
         /* max-width: 1300px; */
         width: 100%;
+    }
+
+    .modal {
+        padding-top: 5vh;
+    }
+
+    .modalContainer img {
+        max-width: 80vw;
     }
     
 }

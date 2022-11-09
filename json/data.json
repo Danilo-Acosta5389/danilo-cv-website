@@ -1,0 +1,86 @@
+{
+    "employments":[
+
+        {
+            "workplace": "Securitas",
+            "time": "2016 - present"
+        },
+        {
+            "workplace": "Nokas",
+            "time": "2014 - 2016"
+        },
+        {
+            "workplace": "Svensk Bevakningstjänst",
+            "time": "2013 - 2014"
+        }
+
+    ],
+    "certifications":[
+        {
+            "cert": "PDV (Ongoing Deadly Violence)",
+            "time": "2019"
+        },
+        {
+            "cert":"Catastrophic Bleeding",
+            "time":"2017"
+        },
+        {
+            "cert":"Handheld weapon Glock 17",
+            "time":"2014 - 2022"
+        },
+        {
+            "cert":"Skyddsvakt (Special security guard)",
+            "time":"2013"
+        },
+        {
+            "cert":"Väktare (Common security guard)",
+            "time":"2013"
+        }
+    ],
+    "education": [
+        {
+            "school": "Chas Academy",
+            "time": "2022 - present"
+        },
+        {
+            "school": "Säkerhetsgymnasiet",
+            "time": "2009 - 2013"
+        }
+    ],
+    "programming": [
+        {
+            "prLanguage": "HTML5"
+        },
+        {
+            "prLanguage": "CSS"
+        },
+        {
+            "prLanguage": "JavaScript"
+        },
+        {
+            "prLanguage": ".NET/C#"
+        }
+    ],
+    "speak": [
+        {
+            "spLanguage": "Swedish"
+        },
+        {
+            "spLanguage": "Spanish"
+        },
+        {
+            "spLanguage": "English"
+        }
+    ],
+    "skills": [
+        {
+            "skill": "High sense of security due to years of experience in the security field."
+        },
+        {
+            "skill": "Keeping it real."
+        },
+        {
+            "skill": "Good sense of humor."
+        }
+    ]
+}

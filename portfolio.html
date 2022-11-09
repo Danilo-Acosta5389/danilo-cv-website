@@ -28,19 +28,19 @@
         <article class="main-portfolio">
             <h4>Danilo's projects</h4>
             <section class="project-1">
-                <h6>First ever website (work in progress)</h6>
-                <img src="project-1.png" alt="Work in progress" id="imgProject1">
+                <h5>First ever website (work in progress)</h5>
+                <img src="media/project-1.png" alt="Work in progress" id="imgProject1">
             </section>
             <section class="project-2">
-                <h6>Godot game project (unfinished)</h6>
-                <video src="project-2.mp4" controls>Your browser does not support the video tag.</video>
+                <h5>Godot game project (unfinished)</h5>
+                <video src="media/project-2.mp4" controls>Your browser does not support the video tag.</video>
             </section>
             <section class="project-3">
-                <h6>C#/.NET basic's</h6>
-                <img src="project-3.png" alt="Screenshot of visual studios c# project in my computer" id="imgProject3">
+                <h5>C#/.NET basic's</h5>
+                <img src="media/project-3.png" alt="Screenshot of visual studios c# project in my computer" id="imgProject3">
             </section>
             <section class="project-4">
-                <h6>Rock, paper, scissor</h6>
+                <h5>Rock, paper, scissor</h5>
                 <div class="rps-game">
                     <div class="player">
                         <h3>Players choice:</h3>
@@ -56,9 +56,40 @@
                         <h3>Computers choice: </h3>
                         <h4 class="computersChoice"></h4>
                     </div>
-                    <h2 class="winner"></h2>
+                    <h2 class="rps-winner"></h2>
                 </div>
             </section>
+
+            <!-- <section class="project-5">
+                <h4>Number guessing game</h4>
+                <div class="ng-container">
+                    <h5>Guess what?</h5>
+                    <div class="mainThing">
+                        <p>Guess a number between 1 and 100. You have 5 attempts. <br>Good luck... </p>
+                        <label for="guessField">Input number here: </label>
+                        <input type="number" class="guessField" id="input">
+                        <button class="button" onclick="userGuess()">Guess</button>
+                        <h5>You guessed the number: <span class="yourGuess"></span></h5>
+                        <h4 class="guesses">Guesses</h4>
+                        <h3>Your attempts</h3>
+                        <ul class="listAttempts"></ul>
+                    </div>
+
+                    <div class="winner">
+                        <h2>Congratulations! You won!</h2>
+                        <h3>You guessed the number: <span class="yourGuess" id="result"></span></h3>
+                        
+                        <button class="restartBtn" onclick="restartGame()">Restart</button>
+                    </div>
+
+                    <div class="loser">
+                        <h2>Game over! You lose!</h2>
+                        <h3>Play again?</h3>
+                        <button class="restartBtn" onclick="restartGame()">restart</button>
+                    </div> 
+
+                </div>
+            </section> -->
             
         </article>
         <aside class="side-content-portfolio">
@@ -72,14 +103,14 @@
         <a href="https://www.linkedin.com/in/danilo-acosta-dote-208a3224b/" target="_blank"><h3>Get in touch today!</h3></a>
     </footer>
 
-    <!--------Modals ----------->
+    <!--------Modals----------->
 
 
 
     <div class="modal" id="modalProject1">
         <div class="modalContainer">
             <span class="closeModal" id="closeModalProject1">&times;</span>
-            <img src="project-1.png" alt="Work in progress">
+            <img src="media/project-1.png" alt="Work in progress">
         </div>
     </div>
 
@@ -87,7 +118,7 @@
     <div class="modal" id="modalProject3">
         <div class="modalContainer">
             <span class="closeModal" id="closeModalProject3">&times;</span>
-            <img src="project-3.png" alt="Work in progress">
+            <img src="media/project-3.png" alt="Work in progress">
         </div>
     </div>
 
