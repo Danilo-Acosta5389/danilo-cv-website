@@ -7,6 +7,8 @@ One of our (the pupils) first and top exercises has been to create our own perso
 
 Creating this website has been a thrill. Lots of frustration, lots of learning and a whole lot of fun!
 
+Here's a link to the github repo: 
+
 If you find my work ok or even good, i just want you to know that it wouldn't had been made without the help from our teachers at Chas Academy. All my gratitude goes to Chas and our teachers!
 
 Thank you for visiting.
