@@ -4,6 +4,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px;
     width: 100%;
     font-family: 'Press Start 2P', cursive;
@@ -55,8 +58,8 @@ nav {
     display: grid;
     grid-template-rows: repeat(4, auto);
     justify-items: center;
-    
-
+    width: 100vw;
+    max-width: 400px;
 }
 
 a {
@@ -84,8 +87,18 @@ a:hover {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding-top: 20px;
     margin-bottom: 10vh;
+}
+
+.main-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-content > p {
+    width: 90vw;
+    max-width: 480px;
 }
 
 article {
@@ -104,10 +117,18 @@ article > p {
 .about-info > h6 { font-size: medium; }
 
 .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
+    width: 90vw;
+    max-width: 480px;
 }
 
-.about-info > p { font-family: 'Noto Sans Mono', monospace; }
+.about-info > p { 
+    font-family: 'Noto Sans Mono', monospace; 
+}
 
 .side-content-home {
     visibility: hidden;
@@ -127,10 +148,10 @@ article > p {
 
 }
 
-.side-content-about:hover {
+/* .side-content-about:hover {
     opacity: 0.5;
     cursor: pointer;
-}
+} */
 
 .side-content-cv {
     background-color: white;
@@ -147,10 +168,10 @@ article > p {
 
 }
 
-.side-content-cv:hover {
+/* .side-content-cv:hover {
     opacity: 0.5;
     cursor: pointer;
-}
+} */
 
 .side-content-portfolio {
     visibility: hidden;
@@ -263,7 +284,8 @@ li {
 }
 
 p {
-    max-width: 30em;
+    max-width: 480px;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 .main-portfolio {
@@ -311,8 +333,25 @@ footer > a :hover {
 }
 
 .ng-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 3px solid black;
+    background-color: white;
+    padding: 1rem;
+    width: 90vw;
+    max-width: 500px;
 }
+
+.mainThing {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.mainThing > button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.5rem;
+}
+
 .mainThing.show
 {
     display: none;
@@ -324,14 +363,35 @@ footer > a :hover {
 
 .winner.win {
 	display: block;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.winner.win > button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
 }
 
 .loser {
+    /* border: 2px solid red; */
 	display: none;
+    max-width: 400px;
+    min-height: 300px;
 }
 
 .loser.lose {
     display: block;
+    text-align: center;
+}
+
+.loser.lose button {
+    align-self: center;
+    margin-top: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -425,13 +485,16 @@ footer > a :hover {
     
 }
 
-/* @media (min-width: 430px) {
+@media (min-width: 500px) {
 
-    .rps-game {
-        min-height: 252px;
+    .project-1>img,
+    .project-2>video,
+    .project-3>img {
+        width: 100%;
+        max-width: 300px;
     }
     
-} */
+}
 
 @media (min-height: 600px) {
     #footerHome {
@@ -472,11 +535,20 @@ footer > a :hover {
 
 @media (min-width: 750px) {
 
+    /* header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+
     h1 {
         max-width: 100%;
+        align-self: center;
     }
 
     h5 {
+        align-self: center;
         font-size: 1em;
     }
     
@@ -489,6 +561,7 @@ footer > a :hover {
         background-color: #f9f6ee;
         display: flex;
         flex-direction: row;
+        max-width: 950px;
         width: 100%;
         justify-content: space-evenly;
     }
@@ -501,17 +574,26 @@ footer > a :hover {
         width: max-content;
     }
 
+    .project-1>img,
+    .project-2>video,
+    .project-3>img {
+        width: 100%;
+        max-width: 400px;
+    }
+
     .speak ul {
         padding-right: 0;
     }
 
     .gridTemplate {
-        padding-right: 75px;
+        /* padding-right: 65px; */
+        width: 90vw;
+        max-width: 900px;
         display: grid;
         grid-template-columns: 1fr fit-content 1fr;
         grid-template-rows: auto auto;
         gap: 2rem;
-        max-width: 100vw;
+        /* max-width: 100vw; */
 
     }
 
@@ -599,14 +681,20 @@ footer > a :hover {
 
 @media (min-width: 950px) {
 
-    body {
+    /* body {
         display: flex;
         flex-direction: column;
 
         align-items: center;
-        justify-content: center;
-    }
+        justify-content:center;
+    } */
 
+    /* .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } */
 
 
     header {

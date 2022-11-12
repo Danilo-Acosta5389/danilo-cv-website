@@ -86,7 +86,7 @@ player.forEach(playerChoice => {
 
 /* -------------------------Number guessing game------------------------*/
 //                            !!!COMING SOON!!!
-/* 
+
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(randomNumber  + ' - Woopsi. You got caught cheating!');
 
@@ -196,7 +196,7 @@ userGuess = () => {
 
 restartGame = () => {
     window.location.reload(false);
-} */
+}
 
 
 
