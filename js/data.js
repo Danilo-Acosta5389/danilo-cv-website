@@ -162,3 +162,25 @@ async function getJsonAgain() {
 
 
 getJsonAgain(); */
+
+
+/*-----------Modal contact me----------------*/
+
+
+const modalSideCV = document.getElementById('modalSideCV');
+const modalContactMe = document.getElementById('modalContactMe');
+const closeModalCV = document.getElementById('closeModalCV');
+
+modalSideCV.addEventListener('click', () => {
+    modalContactMe.classList.add('show');
+});
+
+closeModalCV.addEventListener('click', () => {
+    modalContactMe.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalContactMe) {
+        modalContactMe.classList.remove('show');
+    }
+});

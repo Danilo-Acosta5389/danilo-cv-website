@@ -90,7 +90,7 @@ player.forEach(playerChoice => {
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(randomNumber  + ' - Woopsi. You got caught cheating!');
 
-const inputField = document.querySelector('.guessField');
+const inputField = document.querySelector('.input');
 const button = document.querySelector('.button');
 const resetBtn = document.querySelector('.restartBtn');
 
@@ -116,7 +116,7 @@ inputField.addEventListener('keypress', (event) => {
 })
 
 clearInput = () => {
-    var getValue = document.getElementById("input");
+    var getValue = document.getElementById("guessField");
       if (getValue.value !="") {
           getValue.value = "";
       }
@@ -244,3 +244,4 @@ window.addEventListener('click', (event) => {
         modalProject3.classList.remove('show');
     }
 });
+

@@ -148,16 +148,41 @@ article > p {
 
 }
 
-/* .side-content-about:hover {
+.side-content-about:hover {
     opacity: 0.5;
     cursor: pointer;
-} */
+}
+
+.modal-side-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: white;
+    width: 90vw;
+    max-width: fit-content;
+}
+
+.modal-side-about > p {
+    align-self: flex-start;
+    font-size: 0.7em;
+}
+
+.modal-side-about > img {
+    max-width: 500px;
+}
+
+#closeAboutMe {
+    padding: 0.5rem;
+    align-self: flex-end;
+}
 
 .side-content-cv {
     background-color: white;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    width: 90vw;
     max-width: fit-content;
     height: fit-content;
     border: 5px solid white;
@@ -168,11 +193,38 @@ article > p {
 
 }
 
-/* .side-content-cv:hover {
+.side-content-cv:hover {
     opacity: 0.5;
     cursor: pointer;
-} */
+}
 
+.modal-side-CV {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    background-color: white;
+    width: 90vw;
+    height: fit-content;
+    max-width: fit-content;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.modal-side-CV > .closeModal {
+    padding: 0;
+    align-self: flex-end;
+    color: black;
+}
+
+/* #closeModaCVl:hover,
+#closeModalCV:focus {
+    padding: 0;
+    align-self: flex-end;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+} */
+ 
 .side-content-portfolio {
     visibility: hidden;
 }
