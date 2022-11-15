@@ -9,6 +9,8 @@ Creating this website has been a thrill. Lots of frustration, lots of learning a
 
 Link to the github repo for this project: https://github.com/Danilo-Acosta5389/danilo-cv-website.git
 
+[Github pages-URL](https://danilo-acosta5389.github.io/danilo-cv-website/)
+
 If you find my work ok or even good, i just want you to know that it wouldn't had been made without the help from our teachers at Chas Academy. All my gratitude goes to Chas and our teachers!
 
 Thank you for visiting.
