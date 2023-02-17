@@ -58,8 +58,12 @@
             "prLanguage": "JavaScript"
         },
         {
-            "prLanguage": ".NET/C#"
+            "prLanguage": "C# / .NET"
+        },
+        {
+            "prLanguage": "SQL"
         }
+
     ],
     "speak": [
         {
@@ -74,13 +78,16 @@
     ],
     "skills": [
         {
-            "skill": "High sense of security due to years of experience in the security field."
+            "skill": "Git"
         },
         {
-            "skill": "Keeping it real."
+            "skill": "High sense of security due to years of experience in the security field"
         },
         {
-            "skill": "Good sense of humor."
+            "skill": "Keeping it real"
+        },
+        {
+            "skill": "Good sense of humor"
         }
     ]
 }
