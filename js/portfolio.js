@@ -245,3 +245,43 @@ window.addEventListener('click', (event) => {
     }
 });
 
+/* --------Project 6 image larger size------ */
+
+const modalImgProject6 = document.getElementById('imgProject6');
+const modalProject6 = document.getElementById('modalProject6');
+const closeModalProject6 = document.getElementById('closeModalProject6');
+
+modalImgProject6.addEventListener('click', () => {
+    modalProject6.classList.add('show');
+});
+
+closeModalProject6.addEventListener('click', () => {
+    modalProject6.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalProject6) {
+        modalProject6.classList.remove('show');
+    }
+});
+
+
+/* --------Project 6 image larger size------ */
+
+const modalImgProject7 = document.getElementById('imgProject7');
+const modalProject7 = document.getElementById('modalProject7');
+const closeModalProject7 = document.getElementById('closeModalProject7');
+
+modalImgProject7.addEventListener('click', () => {
+    modalProject7.classList.add('show');
+});
+
+closeModalProject7.addEventListener('click', () => {
+    modalProject7.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalProject6) {
+        modalProject7.classList.remove('show');
+    }
+});
