@@ -229,6 +229,13 @@ article > p {
     visibility: hidden;
 }
 
+
+.visit-github-link {
+    text-shadow: 2px 2px black;
+    color: red;
+}
+
+
 img + p {
     font-size: 0.6em;
     font-weight: 900;
@@ -245,15 +252,24 @@ img {
     min-width: 80vw;
 }
 
+.project-6 > a {
+display: flex;
+flex-direction: row;
+}
+
 .project-1 > img:hover,
-.project-3 > img:hover {
+.project-3 > img:hover,
+.project-6 > img:hover,
+.project-7 > img:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
 .project-1 > img,
 .project-2 > video,
-.project-3 > img {
+.project-3 > img,
+.project-6 > img,
+.project-7 > img {
     width:100%;
     max-width: 200px;
 }
@@ -541,7 +557,9 @@ footer > a :hover {
 
     .project-1>img,
     .project-2>video,
-    .project-3>img {
+    .project-3>img,
+    .project-6>img,
+    .project-7>img {
         width: 100%;
         max-width: 300px;
     }
@@ -628,7 +646,9 @@ footer > a :hover {
 
     .project-1>img,
     .project-2>video,
-    .project-3>img {
+    .project-3>img,
+    .project-6>img,
+    .project-7>img {
         width: 100%;
         max-width: 400px;
     }
