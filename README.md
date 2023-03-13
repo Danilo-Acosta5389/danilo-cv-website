@@ -1,9 +1,9 @@
-# danilo cv website
+# My personal website
 
 
 Hi! My name is Danlo Acosta and i am a programming student at Chas Academy. 
 
-One of our (the pupils) first and top exercises has been to create our own personal website that also holds our curriculum. It has HTML, CSS (obviously), JavaScript and JSON. This is my biggest achivement so far and i will keep working on it untill it has all the functinality i please.
+One of our (the pupils) first and top exercises has been to create our own personal website that also holds our curriculum. It has HTML, CSS, JavaScript and some JSON. This is my biggest (not any more) achivement so far and i will keep working on it untill it has all the functinality i please.
 
 Creating this website has been a thrill. Lots of frustration, lots of learning and a whole lot of fun!
 
