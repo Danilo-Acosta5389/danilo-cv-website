@@ -266,7 +266,7 @@ window.addEventListener('click', (event) => {
 });
 
 
-/* --------Project 6 image larger size------ */
+/* --------Project 7 image larger size------ */
 
 const modalImgProject7 = document.getElementById('imgProject7');
 const modalProject7 = document.getElementById('modalProject7');
@@ -281,7 +281,7 @@ closeModalProject7.addEventListener('click', () => {
 });
 
 window.addEventListener('click', (event) => {
-    if (event.target == modalProject6) {
+    if (event.target == modalProject7) {
         modalProject7.classList.remove('show');
     }
 });
