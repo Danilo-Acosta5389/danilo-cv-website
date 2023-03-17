@@ -17,13 +17,26 @@
             <!-- <hr> -->
             <a href="index.html"><h5 class="under-title">Welcome to my website</h5></a>
         </header>
-        <nav>
-            <a href="index.html" class="nav-btn">Home</a>
-            <a href="about.html" class="nav-btn">About me</a>
-            <a href="cv.html" class="nav-btn" id="cv">Curriculum *</a>
-            <a href="portfolio.html" class="nav-btn">Portfolio</a>
-        </nav>
     </div>
+    <nav class="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn">About me</a></li>
+            <li><a href="cv.html" class="nav-btn" id="cv" style="color:lightgray;">Curriculum *</a></li>
+            <li><a href="portfolio.html" class="nav-btn">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <nav class="seccond-nav">
+        <a href="index.html" class="nav-btn2">Home</a>
+        <a href="about.html" class="nav-btn2">About me</a>
+        <a href="cv.html" class="nav-btn2" id="cv" style="color:lightgray;">Curriculum *</a>
+        <a href="portfolio.html" class="nav-btn2">Portfolio</a>
+    </nav>
     <div class="main">
         <article class="main-cv">
             <h4>Danilo's CV</h4>
@@ -41,7 +54,7 @@
                     <ul class="edu-list"></ul>
                 </section>
                 <section class="programming">
-                    <h6>Programming languages</h6>
+                    <h6>Programming</h6>
                     <ul class="lang1-list"></ul>
                 </section>
                 <section class="speak">
@@ -49,7 +62,7 @@
                     <ul class="lang2-list"></ul>
                 </section>
                 <section class="skills">
-                    <h6>Special skillset</h6>
+                    <h6>Special skills</h6>
                     <ul class="skill-list"></ul>
                 </section>
             </div>
