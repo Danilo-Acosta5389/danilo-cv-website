@@ -185,8 +185,9 @@ userGuess = () => {
 
     console.log(maxGuesses);
 
-    if (maxGuesses == 5) {
+    if (maxGuesses >= 5) {
 
+        winner.classList.remove('win');
         show.classList.add('show');
         loser.classList.add('lose');
 
