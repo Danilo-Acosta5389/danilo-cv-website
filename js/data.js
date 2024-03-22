@@ -5,11 +5,11 @@
 
 
 async function getJson() {
-    const request = new Request('json/data.json');
+    //const request = new Request('json/data.json');
     const response = await fetch('json/data.json');
     const cvSection = await response.json();
 
-    console.log(cvSection);
+    //console.log(cvSection);
     return cvSection;
 }
 
@@ -23,11 +23,10 @@ const addToCv = (cvSection) => {
         <strong>${element.workplace}: </strong>
         <br>${element.time}
         </li>`;
-
         employmentsHTML += listItem
-        console.log(cvSection.employments);
+        //console.log(cvSection.employments);
     });
-    document.querySelector('.emp-list').innerHTML = employmentsHTML
+    document.querySelector('.emp-list').innerHTML = employmentsHTML;
 
     //CERTIFICATIONS
     let certificationsHTML = '';
@@ -38,7 +37,7 @@ const addToCv = (cvSection) => {
         </li>`;
 
         certificationsHTML += listItem;
-        console.log(cvSection.certifications);
+        //console.log(cvSection.certifications);
     })
     document.querySelector('.certs-list').innerHTML = certificationsHTML
 
@@ -49,7 +48,7 @@ const addToCv = (cvSection) => {
         <li><strong>${element.school}: </strong><br>${element.time}</li>`;
 
         educationHTML += listItem;
-        console.log(cvSection.education);
+        //console.log(cvSection.education);
     })
     document.querySelector('.edu-list').innerHTML = educationHTML
 
@@ -60,7 +59,7 @@ const addToCv = (cvSection) => {
         <li>${element.prLanguage}</li>`;
 
         programmingHTML += listItem;
-        console.log(cvSection.programming);
+        //console.log(cvSection.programming);
     })
     document.querySelector('.lang1-list').innerHTML = programmingHTML
 
@@ -71,7 +70,7 @@ const addToCv = (cvSection) => {
         <li>${element.spLanguage}</li>`;
 
         speakHTML += listItem;
-        console.log(cvSection.speak);
+        //console.log(cvSection.speak);
     })
     document.querySelector('.lang2-list').innerHTML = speakHTML
 
@@ -82,7 +81,7 @@ const addToCv = (cvSection) => {
         <li>${element.skill}</li>`;
 
         skillsHTML += listItem;
-        console.log(cvSection.skills);
+        //console.log(cvSection.skills);
     })
     document.querySelector('.skill-list').innerHTML = skillsHTML
 
