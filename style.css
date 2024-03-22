@@ -787,14 +787,14 @@ footer > a :hover {
 
 @media (min-height: 600px) {
   #footerHome {
-    position: fixed;
+    //position: fixed;
     bottom: 0;
   }
 }
 
 @media (min-height: 1000px) {
   #footerHome {
-    position: relative;
+    //position: relative;
     margin-top: 25rem;
   }
 }
@@ -822,6 +822,10 @@ footer > a :hover {
 }
 
 @media (min-width: 750px) {
+  #footerHome {
+    position: fixed;
+    margin-top: 25rem;
+  }
   /* header {
         display: flex;
         flex-direction: column;
