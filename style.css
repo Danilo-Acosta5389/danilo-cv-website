@@ -95,6 +95,10 @@ h6 {
   overflow-x: hidden;
 }
 
+.footerHome {
+  display: flex;
+}
+
 /* ---------      Drop down menu    START   -------- */
 
 .top-nav {
@@ -785,18 +789,18 @@ footer > a :hover {
   }
 }
 
-@media (min-height: 600px) {
+/* @media (min-height: 600px) {
   #footerHome {
     //position: fixed;
     bottom: 0;
   }
-}
+} */
 
 @media (min-height: 1000px) {
-  #footerHome {
+  /* #footerHome {
     //position: relative;
     margin-top: 25rem;
-  }
+  } */
 }
 
 @media (min-width: 600px) {
@@ -822,7 +826,7 @@ footer > a :hover {
 }
 
 @media (min-width: 750px) {
-  #footerHome {
+  .footerHome {
     position: fixed;
     margin-top: 25rem;
   }
