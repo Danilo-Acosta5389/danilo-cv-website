@@ -597,12 +597,26 @@ footer {
   background-color: rgba(249, 246, 238, 0.7);
   /* position: relative; */
   width: 100vw;
-  min-height: 10vh;
+  max-height: 8rem;
+  padding: 1rem;
+  margin-top: 5rem;
   bottom: 0;
 }
 
-footer > a {
-  /* padding-top: 1rem; */
+footer > img {
+  width: 100%;
+  max-width: 7rem;
+  margin: 0.5rem;
+  &:hover {
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+/* footer > a {
+  padding-top: 1rem; 
   animation: color-change 0.7s infinite;
 }
 
@@ -620,7 +634,7 @@ footer > a :hover {
   100% {
     color: red;
   }
-}
+} */
 
 /* @keyframes menu-selected {
     0% { color: red; }
@@ -843,10 +857,10 @@ footer > a :hover {
 }
 
 @media (min-width: 750px) {
-  .footerHome {
+  /* .footerHome {
     position: fixed;
     margin-top: 25rem;
-  }
+  } */
   /* header {
         display: flex;
         flex-direction: column;
