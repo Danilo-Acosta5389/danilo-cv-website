@@ -808,6 +808,11 @@ footer > a :hover {
   /* .rps-game {
         font-size: 0.5em;
     } */
+
+  footer {
+    position: relative;
+    bottom: -7rem;
+  }
 }
 
 @media (min-width: 500px) {
@@ -861,6 +866,7 @@ footer > a :hover {
   .footerHome {
     position: fixed;
     margin-top: 17rem;
+    bottom: 0;
   }
   /* header {
         display: flex;
@@ -995,6 +1001,12 @@ footer > a :hover {
 
   .footerHome {
     align-self: start;
+  }
+  @media (max-height: 730px) {
+    .footerHome {
+      position: static;
+      margin-top: 0;
+    }
   }
 }
 
